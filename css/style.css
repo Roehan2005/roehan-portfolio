@@ -14,3 +14,60 @@ section{padding:70px 10%}
 #output{color:#00ff9f;min-height:100px;font-family:monospace}
 #cmd{width:100%;padding:10px;background:#111;color:#00ff9f;border:1px solid #00ff9f}
 a{color:#00ff9f}
+/* Mobile Devices */
+@media screen and (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav div:last-child {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .hero {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    #terminal {
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    #cmd {
+        width: 100%;
+    }
+}
+.project {
+    cursor: pointer;
+    touch-action: manipulation;
+}
